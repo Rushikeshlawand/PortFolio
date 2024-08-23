@@ -11,7 +11,7 @@ const Contact = () => {
             <div className="contact-content">
                 <h2>Contact</h2>
                 <div className="contact-info">
-                    <p>Email: <a href="mailto:rushilawand0@gmail.com">rushilawand0@gmail.com</a></p>
+                    <p>Email: <a href="mailto:rushilawand0@gmail.com">rushikeshlawand@yahoo.com</a></p>
                     <p>GitHub: <a href="https://github.com/rushikeshlawand" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} /> github.com/rushikeshlawand
                     </a></p>
