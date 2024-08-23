@@ -1,0 +1,49 @@
+/* src/components/Projects.css */
+#projects {
+    padding: 20px;
+    
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.project-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+}
+
+.project-card p .fa-icon {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 90%;
+    }
+}
