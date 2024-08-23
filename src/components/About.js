@@ -13,14 +13,14 @@ const About = () => {
             <h3>Education</h3>
             <div className="education">
                 <div className="edu-item">
-                    <h4>B.Tech in Computer Engineering</h4>
-                    <p>XYZ University, Pune</p>
-                    <p>Graduated in 2024</p>
+                    <h4>B.Tech in Computer Science & Engineering</h4>
+                    <p>MIT College Of Railway Engineering & Research Barshi</p>
+                    <p>CGPA: 9.07</p>
                 </div>
                 <div className="edu-item">
-                    <h4>Diploma in Web Development</h4>
-                    <p>ABC Institute, Pune</p>
-                    <p>Completed in 2022</p>
+                    <h4>Diploma in Computer Engineering</h4>
+                    <p>Institute Of Petrochemical Engineering Lonere</p>
+                    <p>CGPA: 7.92</p>
                 </div>
             </div>
             <h3>Skills & Expertise</h3>
