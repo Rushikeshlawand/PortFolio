@@ -1,58 +1,46 @@
-/* src/components/Home.css */
 #home {
-    text-align: center;
-    padding: 50px 20px;
-    /* Maintain previous background styling here if needed */
+    padding: 20px;
+    color: #fff; /* White text color */
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) */
+    gap: 30px; /* Space between image and text */
+    max-width: 1200px; /* Set a maximum width to center the content */
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+.header {
+    display: flex;
+    flex-direction: column; /* Align images vertically */
+    align-items: center; /* Center images horizontally */
+}
+
+.profile-image {
+    width: 50px;  /* Adjust the size as needed */
+    height: 50px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 2px solid #0073e6;  /* Optional border color */
+}
+
+.additional-image {
+    width: 200px;  /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 2px solid #e67e22;  /* Optional border color for distinction */
 }
 
 .intro {
-    margin-bottom: 30px;
+    max-width: 800px;
+    text-align: left; /* Align text to the left */
 }
 
 .intro h1 {
-    font-size: 2.5rem;
+    font-size: 3.5em;
     margin-bottom: 10px;
 }
 
 .intro p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.5;
-}
-
-.cta {
-    /* background-color: #fff; */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.cta h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.cta ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.cta li {
-    font-size: 1.1rem;
+    font-size: 1.2em;
     margin-bottom: 10px;
-}
-
-.contact-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-}
-
-.contact-link:hover {
-    background-color: #0056b3;
 }

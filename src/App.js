@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import StarField from './components/StarField';
 import './App.css'; // Make sure to import your global styles
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Projects />
                 <Skills />
                 <Contact />
+                <Footer />
             </div>
         </div>
     );

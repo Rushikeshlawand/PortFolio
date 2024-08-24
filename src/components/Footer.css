@@ -1,0 +1,41 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.footer-content .social-links a {
+    color: #00aaff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content .social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-content .social-links .faGithub,
+.footer-content .social-links .faLinkedin,
+.footer-content .social-links .faTwitter {
+    margin-right: 8px; /* Space between icon and text */
+}

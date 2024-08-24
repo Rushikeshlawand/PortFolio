@@ -1,4 +1,3 @@
-// src/components/Contact.js
 import React from 'react';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
