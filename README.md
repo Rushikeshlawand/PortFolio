@@ -31,16 +31,3 @@ If you’re eager to dive in and run the project locally, follow these steps:
 
     This will fire up the development server and you’ll be able to see the project in action. 🎬
 
-## Need Help or Have Questions?
-
-We’re here to help! If you have any questions, suggestions, or just want to chat, feel free to reach out to us at [your contact info or email address].
-
-Thanks for your patience and understanding as we work on making this project even better. We appreciate your support!
-
-## License
-
-We believe in sharing knowledge and innovation. Check out the [LICENSE](LICENSE) file for details on how you can use and contribute to this project.
-
----
-
-Happy coding! 🚀
