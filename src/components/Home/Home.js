@@ -1,8 +1,8 @@
-// src/components/Home.js
+
 import React from 'react';
 import './Home.css';  // Ensure you have this file for styles
-import myImage from '../assets/images/my-image.jpg'; // Adjust the path as necessary
-import anotherImage from '../assets/images/another-image.jpg'; // Add path for new image
+import myImage from '../Images/my-image.jpg'; // Adjust the path as necessary
+import anotherImage from '../Images/another-image.jpg'; // Add path for new image
 
 const Home = () => {
     return (

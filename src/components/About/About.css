@@ -1,0 +1,82 @@
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px; /* Reduced padding for a more balanced layout */
+    max-width: 1200px; 
+    margin: auto;
+    gap: 40px; /* Increased gap for better spacing */
+}
+
+#about {
+    flex: 1;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #444; /* Added background color to distinguish the section */
+    padding: 20px; /* Added padding for content inside the section */
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#about p {
+    font-size: 1.1em; /* Increased font size for better readability */
+    line-height: 1.6; /* Improved line height for better text spacing */
+    color: #ddd; /* Lighter color for better contrast against background */
+}
+
+.education {
+    flex: 1;
+    width: 100%;
+}
+
+.education h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center; /* Centered the heading */
+}
+
+.edu-item {
+    background: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.edu-item h4 {
+    margin: 0; 
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.edu-item p {
+    margin: 10px 0; /* Reduced margin for tighter spacing */
+    color: #ddd;
+}
+
+.edu-item a {
+    color: #00aaff; 
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.edu-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    #about-container {
+        flex-direction: row; /* Switch to row layout on larger screens */
+        justify-content: space-between;
+    }
+
+    .education {
+        margin-left: 20px; /* Adjusted margin for spacing between sections */
+    }
+}

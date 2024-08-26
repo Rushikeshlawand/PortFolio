@@ -36,6 +36,9 @@
 
 .footer-content .social-links .faGithub,
 .footer-content .social-links .faLinkedin,
-.footer-content .social-links .faTwitter {
+.footer-content .social-links .faTwitter,
+.footer-content .social-links .faCode,
+.footer-content .social-links .faInstagram,
+.footer-content .social-links .faEnvelope {
     margin-right: 8px; /* Space between icon and text */
 }

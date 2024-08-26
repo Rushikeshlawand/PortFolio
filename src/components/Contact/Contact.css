@@ -1,6 +1,5 @@
 /* src/components/Contact.css */
 #contact {
-    position: relative;
     padding: 20px;
     color: #fff;
     background: inherit; /* Keep the existing background */
@@ -14,54 +13,13 @@
     margin: auto;
 }
 
-.contact-info {
-    background: rgba(0, 0, 0, 0.6); /* Add background to improve readability */
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
-    margin-bottom: 20px; /* Add space between contact info and form */
-    text-align: center; /* Center the content */
-}
-
-.contact-info h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #fff;
-    text-align: center; /* Center the heading */
-}
-
-.contact-info p {
-    font-size: 1.2em;
-    color: #ddd;
-    margin: 10px 0;
-}
-
-.contact-info a {
-    color: #00aaff;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center; /* Center the text and icons */
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.contact-info .faCode,
-.contact-info .faEnvelope,
-.contact-info .faGithub,
-.contact-info .faLinkedin {
-    margin-right: 12px; /* Increase space between icon and text */
-}
-
 .contact-form {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%; /* Ensure the form takes full width */
+    /* background: rgba(0, 0, 0, 0.6); Add background to match the design */
 }
 
 .contact-form h3 {

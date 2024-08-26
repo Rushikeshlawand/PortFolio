@@ -1,0 +1,62 @@
+#projects {
+    padding: 40px 20px;
+    
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center-aligns the project cards */
+    gap: 20px; /* Adds space between the cards */
+}
+
+.project-card {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px; /* Reduced width for smaller cards */
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 calc(33.333% - 40px); /* Allows for 3 cards per row with space between */
+    margin: 10px; /* Adds space around each card */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.project-card p {
+    font-size: 0.9em; /* Slightly smaller font size for compact content */
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+}
+
+.project-card p .fa-icon {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(50% - 20px); /* Adjusts to 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 1 1 100%; /* Stacks the cards vertically on very small screens */
+    }
+}
