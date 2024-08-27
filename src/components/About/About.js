@@ -1,6 +1,5 @@
-// src/components/About.js
 import React from 'react';
-import './About.css'; // Optional: Create a CSS file for additional styling
+import './About.css';
 
 const About = () => {
     return (
@@ -20,21 +19,27 @@ const About = () => {
                 <h3>Education</h3>
                 <div className="edu-item">
                     <h4>B.Tech in Computer Science & Engineering</h4>
-                    <p>MIT College Of Railway Engineering & Research Barshi</p>
+                    <p>MIT College Of Railway Engineering & Research, Barshi</p>
+                    <p>University: Solapur University</p> {/* Added University name */}
                     <p>CGPA: 9.07</p>
                     <p>Year: 2019 - 2023</p>
-                    <a href="https://drive.google.com/your-marksheet-link" target="_blank" rel="noopener noreferrer">
-                        View Marksheet
-                    </a>
+                    <button>
+                        <a href="https://drive.google.com/file/d/13vLO6CztPULAvgxn_jatxgZPvuFsDaV4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                            View Marksheet
+                        </a>
+                    </button>
                 </div>
                 <div className="edu-item">
                     <h4>Diploma in Computer Engineering</h4>
-                    <p>Institute Of Petrochemical Engineering Lonere</p>
+                    <p>Institute Of Petrochemical Engineering, Lonere</p>
+                    <p>University: Dr.BATU University</p> {/* Added University name */}
                     <p>CGPA: 7.92</p>
                     <p>Year: 2016 - 2019</p>
-                    <a href="https://drive.google.com/your-diploma-marksheet-link" target="_blank" rel="noopener noreferrer">
-                        View Marksheet
-                    </a>
+                    <button>
+                        <a href="https://drive.google.com/file/d/1CWR9ZCqlqG43Df-6K_51W5RUmZg-KH3f/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                            View Marksheet
+                        </a>
+                    </button>
                 </div>
             </div>
         </section>

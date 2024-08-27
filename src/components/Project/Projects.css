@@ -15,10 +15,11 @@
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center; /* Center-aligns the project cards */
     gap: 20px; /* Adds space between the cards */
+    
 }
 
 .project-card {
-    background: #fff;
+    background: #333;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 300px; /* Reduced width for smaller cards */
@@ -26,6 +27,8 @@
     transition: transform 0.3s ease-in-out;
     flex: 1 1 calc(33.333% - 40px); /* Allows for 3 cards per row with space between */
     margin: 10px; /* Adds space around each card */
+    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
+
 }
 
 .project-card:hover {
@@ -35,13 +38,13 @@
 .project-card h3 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #0073e6;
+    color: #ffffff;
 }
 
 .project-card p {
     font-size: 0.9em; /* Slightly smaller font size for compact content */
     line-height: 1.5;
-    color: #555;
+    color: #ffffff;
     text-align: left;
 }
 

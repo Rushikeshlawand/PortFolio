@@ -5,25 +5,8 @@ import './CertificatesAchievements.css';
 const CertificatesAchievements = () => {
     return (
         <section id="certificates-achievements">
-            <h2>Certificates & Achievements</h2>
-            <div className="achievement">
-                <h3>Solved 80+ Problems on LeetCode</h3>
-                <p>
-                    Successfully solved over 80+ problems on LeetCode, demonstrating problem-solving skills and proficiency in various algorithms and data structures.
-                </p>
-            </div>
-            <div className="certificates">
-                <div className="certificate">
-                    <h3>Fundamentals of Java</h3>
-                    <p>SkillsUp</p>
-                </div>
-                <div className="certificate">
-                    <h3>Web Development</h3>
-                    <p>Coursera</p>
-                </div>
-            </div>
+            <h2>Extracurricular Activities</h2>
             <div className="extracurricular">
-                <h3>Extracurricular Activities</h3>
                 <div className="activity">
                     <h4>Social Media Manager | MIT College Instagram Account</h4>
                     <p>

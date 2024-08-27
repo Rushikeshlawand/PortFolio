@@ -2,19 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px; /* Reduced padding for a more balanced layout */
+    padding: 50px 20px;
     max-width: 1200px; 
     margin: auto;
-    gap: 40px; /* Increased gap for better spacing */
+    gap: 40px;
+    /* box-shadow: 0 1px 10px rgb(255, 255, 255); Added shadow to the card */
+
 }
 
 #about {
     flex: 1;
     border-radius: 8px;
     color: #fff;
-    background-color: #444; /* Added background color to distinguish the section */
-    padding: 20px; /* Added padding for content inside the section */
+    background-color: #444;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
+
+}
+#about:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.762);
 }
 
 #about h2 {
@@ -24,9 +32,9 @@
 }
 
 #about p {
-    font-size: 1.1em; /* Increased font size for better readability */
-    line-height: 1.6; /* Improved line height for better text spacing */
-    color: #ddd; /* Lighter color for better contrast against background */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
 }
 
 .education {
@@ -38,7 +46,7 @@
     font-size: 2em;
     margin-bottom: 20px;
     color: #fff;
-    text-align: center; /* Centered the heading */
+    text-align: center;
 }
 
 .edu-item {
@@ -46,6 +54,15 @@
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
+}
+
+/* Hover effect on education cards */
+.edu-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.663);
 }
 
 .edu-item h4 {
@@ -55,28 +72,41 @@
 }
 
 .edu-item p {
-    margin: 10px 0; /* Reduced margin for tighter spacing */
+    margin: 10px 0;
     color: #ddd;
 }
 
 .edu-item a {
-    color: #00aaff; 
+    color: #415057; 
     text-decoration: none;
     font-size: 1em;
 }
 
-.edu-item a:hover {
-    text-decoration: underline;
+
+.edu-item button {
+    background-color: #ffffff;
+    color: #2343d0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 1.0s ease;
+}
+
+.edu-item button:hover {
+    background-color: #00ff7b;
 }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
     #about-container {
-        flex-direction: row; /* Switch to row layout on larger screens */
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .education {
-        margin-left: 20px; /* Adjusted margin for spacing between sections */
+        margin-left: 20px;
     }
 }

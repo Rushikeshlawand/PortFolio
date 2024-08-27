@@ -1,6 +1,6 @@
 /* src/components/Skills.css */
 #skills {
-    padding: 40px 20px;
+    padding: 200px 20px;
     text-align: center;
 }
 
@@ -20,13 +20,15 @@
 }
 
 .skill-card {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow size */
+    background: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.847); /* Reduced shadow size */
     padding: 15px; /* Reduced padding */
     border-radius: 8px; /* Slightly smaller border radius */
     text-align: center;
     flex: 0 0 auto; /* Prevent cards from shrinking or growing */
     width: 150px; /* Reduced width of each card */
+    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
+
     /* Optional: Adjust font sizes if needed */
 }
 
@@ -51,15 +53,17 @@
 }
 
 .skill-card-back {
-    background: #f0f0f0;
-    padding: 8px; /* Reduced padding */
+    background: #00f48e;
+    padding: 20px; /* Reduced padding */
     border-radius: 6px; /* Slightly smaller border radius */
+    width: 80px;
+    height: 50px;
 }
 
 .skill-card h3 {
     font-size: 1.3em; /* Reduced font size */
     margin: 10px 0; /* Reduced margin */
-    color: #0073e6;
+    color: #ffffff;
 }
 
 .skill-level {
@@ -67,7 +71,7 @@
 }
 
 .skill-bar {
-    background: #ddd;
+    background: #634a4a;
     border-radius: 5px;
     overflow: hidden;
     height: 8px; /* Reduced height */
