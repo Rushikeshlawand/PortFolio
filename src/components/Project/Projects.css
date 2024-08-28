@@ -1,12 +1,13 @@
+/* Existing styles for the Projects section */
 #projects {
     padding: 40px 20px;
-    
+    margin-top: 180px;
     text-align: center;
 }
 
 #projects h2 {
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #ffffff;
 }
 
@@ -15,51 +16,109 @@
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center; /* Center-aligns the project cards */
     gap: 20px; /* Adds space between the cards */
-    
 }
 
+/* Modified .project-card to include the spinning gradient border */
 .project-card {
+    width: 60vmin;
+    height: 60vmin;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
     background: #333;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 300px; /* Reduced width for smaller cards */
-    border-radius: 12px;
+    border-radius: 2em;
     transition: transform 0.3s ease-in-out;
-    flex: 1 1 calc(33.333% - 40px); /* Allows for 3 cards per row with space between */
-    margin: 10px; /* Adds space around each card */
-    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
+    position: relative;
+    text-align: center;
 
+    /* Spinning gradient border */
+    --border-angle: 0turn; /* For animation */
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 5%,
+        #112 60%,
+        #213 95%
+    );
+
+    border: solid 2px transparent;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+    background: 
+        var(--main-bg) padding-box,
+        var(--gradient-border) border-box,
+        var(--main-bg) border-box;
+    
+    background-position: center center;
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
+    animation-play-state: paused;
+}
+
+/* Custom property registration */
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
 }
 
 .project-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.6em;
+    margin-top: 1px;
     color: #ffffff;
 }
 
 .project-card p {
-    font-size: 0.9em; /* Slightly smaller font size for compact content */
+    font-size: 0.9em;
     line-height: 1.5;
     color: #ffffff;
     text-align: left;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
-.project-card p .fa-icon {
-    margin-right: 8px;
+.project-card .fa-icon {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
 }
 
+.github-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    color: #00f48e;
+    transform: scale(1.1);
+
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .project-card {
-        flex: 1 1 calc(50% - 20px); /* Adjusts to 2 cards per row on smaller screens */
+        flex: 1 1 calc(50% - 20px);
     }
 }
 
 @media (max-width: 480px) {
     .project-card {
-        flex: 1 1 100%; /* Stacks the cards vertically on very small screens */
+        flex: 1 1 100%;
     }
 }

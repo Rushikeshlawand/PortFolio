@@ -1,9 +1,8 @@
-// src/components/Skills.js
 import React from 'react';
 import './Skills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJsSquare, faReact, faJava, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3Alt, faJsSquare, faReact, faJava, faGithub, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faCode, faBrain } from '@fortawesome/free-solid-svg-icons'; // faCode and faBrain for Problem Solving & DSA
 
 const skills = [
     { name: 'HTML', level: 90, icon: faHtml5 },
@@ -12,7 +11,13 @@ const skills = [
     { name: 'React', level: 80, icon: faReact },
     { name: 'Java', level: 90, icon: faJava },
     { name: 'MySQL', level: 70, icon: faDatabase },
+    { name: 'Git', level: 85, icon: faGithub }, // Using GitHub icon for Git
+
     { name: 'GitHub', level: 90, icon: faGithub },
+    { name: 'Bootstrap', level: 80, icon: faBootstrap },
+    { name: 'Material UI', level: 75, icon: faReact }, // Using React icon for Material UI
+    { name: 'Problem Solving', level: 85, icon: faBrain },
+    { name: 'DSA', level: 80, icon: faCode },
 ];
 
 const Skills = () => {
