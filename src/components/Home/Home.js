@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';  // Ensure you have this file for styles
-import anotherImage from '../Images/another-image.jpg'; // Add path for new image
+import anotherImage from '../Images/my-image.jpg'; // Add path for new image
 
 const Home = () => {
     const [text, setText] = useState("Software Engineer From India");
