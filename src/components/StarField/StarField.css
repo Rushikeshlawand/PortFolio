@@ -88,4 +88,101 @@
   .star-field .layer:nth-child(3) {
     animation: sf-fly-by-3 5s linear infinite;
   }
-  
+  .comet {
+    position: absolute;
+    top: 20%;
+    width: 100px;
+    height: 1.5px;
+    background: linear-gradient(to right, #fff, transparent);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transform: rotate(-180deg);
+    animation: comet-tail 15s linear infinite;
+}
+
+@keyframes comet-tail {
+    from {
+        transform: translateX(-100vw) rotate(-230deg);
+    }
+    to {
+        transform: translateX(100vw) rotate(-180deg);
+    }
+}
+.comet2 {
+  position: absolute;
+  top: 80%;
+  left: 1%;
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(to right, #fff, transparent);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  transform: rotate(-180deg);
+  animation: comet-tail 25s linear infinite;
+}
+@keyframes comet2-tail {
+  from {
+      transform: translateX(-100%) rotate(-180deg);
+  }
+  to {
+      transform: translateX(100vw) rotate(-180deg);
+  }
+}
+.sun {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255, 255, 0, 0.8), rgba(255, 204, 0, 0.5));
+  border-radius: 50%;
+  box-shadow: 0 0 80px rgba(255, 255, 0, 0.8);
+  z-index: -2;
+}
+
+
+
+
+
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #6a0dad, #000);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.planet1 {
+  top: 20%;
+  left: 30%;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+
+
+
+.earth {
+  background: radial-gradient(circle, #00f, #003d66);
+  width: 120px;
+  height: 120px;
+  animation: orbit 59s linear infinite;
+}
+
+/* Mars styles */
+.mars {
+  background: radial-gradient(circle, #d94f4f, #660000);
+  width: 100px;
+  height: 100px;
+  animation: orbit 60s linear infinite;
+}
+
+/* Orbit animation */
+@keyframes orbit {
+  0% {
+      transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}

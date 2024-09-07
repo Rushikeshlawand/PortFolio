@@ -1,93 +1,89 @@
-/* src/components/Skills.css */
 #skills {
-    padding: 200px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
 #skills h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    margin-top: 200px;
+    font-size: 2.8em;
+    margin-bottom: 40px;
     color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for title */
 }
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap; /* Prevent wrapping, keep cards in a single line */
-    overflow-x: auto; /* Allow horizontal scrolling */
-    gap: 15px; /* Reduce space between cards */
-    padding: 10px 0; /* Vertical padding for scroll */
-    justify-content: center; /* Center align cards horizontally */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .skill-card {
-    background: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.847); /* Reduced shadow size */
-    padding: 15px; /* Reduced padding */
-    border-radius: 8px; /* Slightly smaller border radius */
+    background-color: rgba(28, 53, 85, 0.8); /* Transparent dark background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 12px;
     text-align: center;
-    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
-    width: 150px; /* Reduced width of each card */
-    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
-
-    /* Optional: Adjust font sizes if needed */
+    width: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
-.skill-card-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
 }
 
 .skill-card-front {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.skill-card-back {
-    display: none; /* Hide the back by default */
-}
-
-.skill-card:hover .skill-card-back {
-    display: block; /* Show the back on hover */
-}
-
-.skill-card-back {
-    background: #00f48e;
-    padding: 20px; /* Reduced padding */
-    border-radius: 6px; /* Slightly smaller border radius */
-    width: 80px;
-    height: 50px;
-}
-
-.skill-card h3 {
-    font-size: 1.3em; /* Reduced font size */
-    margin: 10px 0; /* Reduced margin */
     color: #ffffff;
 }
 
-.skill-level {
-    width: 100%;
+.skill-card-front .fa {
+    color: #007bff; /* Icon color for a professional look */
+    margin-bottom: 10px;
+    transition: color 0.3s;
 }
 
-.skill-bar {
-    background: #634a4a;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 8px; /* Reduced height */
-    position: relative;
+.skill-card:hover .fa {
+    color: #17a2b8; /* Change icon color on hover */
 }
 
-.skill-bar span {
-    display: block;
-    background: #0073e6;
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    line-height: 8px; /* Adjusted line height */
-    font-size: 0.7em; /* Reduced font size */
-    position: absolute;
-    top: 0;
-    left: 0;
+.skill-card h3 {
+    font-size: 1.4em;
+    margin: 15px 0;
+}
+
+/* Symbol styling for skill levels */
+.skill-symbol {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.symbol {
+    font-size: 0.9em;
+    color: #ffffff;
+    opacity: 0.6; /* Slightly faded symbol */
+}
+
+.skill-card:hover .symbol {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.symbol-star {
+    color: #ffce31; /* Yellow stars for a professional look */
+}
+
+.symbol-beginner {
+    color: #dc3545; /* Red for beginner level */
+}
+
+.symbol-intermediate {
+    color: #ffc107; /* Amber for intermediate level */
+}
+
+.symbol-expert {
+    color: #28a745; /* Green for expert level */
 }

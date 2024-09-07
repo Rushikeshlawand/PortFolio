@@ -85,23 +85,6 @@
     font-size: 1em;
 }
 
-
-.edu-item button {
-    background-color: #ffffff;
-    color: #2343d0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 1.0s ease;
-}
-
-.edu-item button:hover {
-    background-color: #00ff7b;
-}
-
 /* Responsive adjustments */
 @media (min-width: 768px) {
     #about-container {
@@ -113,10 +96,15 @@
         margin-left: 20px;
     }
 }
-.edu-item .fa-icon {
-    font-size: 2em;
-    margin-bottom: 15px;
+.edu-item a {
+    font-size: 1.6em;
+    margin-bottom: 5px;
     color: #ffffff;
-    text-align: center;
+    display: block;
+}
+.edu-item a:hover {
+    font-size: 1.7em;
+    margin-bottom: 5px;
+    color: #06ff02;
     display: block;
 }

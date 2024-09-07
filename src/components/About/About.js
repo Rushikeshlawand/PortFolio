@@ -28,7 +28,7 @@ const About = () => {
           <p>University: Solapur University</p> {/* Added University name */}
           <p>CGPA: 9.07 | Year: 2020 - 2023</p>
           <a
-            href="link-to-your-marksheet"
+            href="https://drive.google.com/file/d/13vLO6CztPULAvgxn_jatxgZPvuFsDaV4/view?usp=drive_link"
             className="document-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const About = () => {
           <p>University: Dr.BATU University</p> {/* Added University name */}
           <p>CGPA: 7.92 | Year: 2016 - 2020</p>
           <a
-            href="link-to-your-marksheet"
+            href="https://drive.google.com/file/d/1CWR9ZCqlqG43Df-6K_51W5RUmZg-KH3f/view?usp=drive_link"
             className="document-link"
             target="_blank"
             rel="noopener noreferrer"

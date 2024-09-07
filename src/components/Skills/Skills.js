@@ -2,22 +2,21 @@ import React from 'react';
 import './Skills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faJava, faGithub, faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faCode, faBrain } from '@fortawesome/free-solid-svg-icons'; // faCode and faBrain for Problem Solving & DSA
+import { faDatabase, faCode, faBrain } from '@fortawesome/free-solid-svg-icons';
 
 const skills = [
-    { name: 'HTML', level: 90, icon: faHtml5 },
-    { name: 'CSS', level: 85, icon: faCss3Alt },
-    { name: 'JavaScript', level: 75, icon: faJsSquare },
-    { name: 'React', level: 80, icon: faReact },
-    { name: 'Java', level: 90, icon: faJava },
-    { name: 'MySQL', level: 70, icon: faDatabase },
-    { name: 'Git', level: 85, icon: faGithub }, // Using GitHub icon for Git
-
-    { name: 'GitHub', level: 90, icon: faGithub },
-    { name: 'Bootstrap', level: 80, icon: faBootstrap },
-    { name: 'Material UI', level: 75, icon: faReact }, // Using React icon for Material UI
-    { name: 'Problem Solving', level: 85, icon: faBrain },
-    { name: 'DSA', level: 80, icon: faCode },
+    { name: 'HTML', icon: faHtml5, levelSymbol: 'star', symbolColor: 'symbol-expert' },
+    { name: 'CSS', icon: faCss3Alt, levelSymbol: 'star', symbolColor: 'symbol-expert' },
+    { name: 'JavaScript', icon: faJsSquare, levelSymbol: 'intermediate', symbolColor: 'symbol-intermediate' },
+    { name: 'React', icon: faReact, levelSymbol: 'star', symbolColor: 'symbol-expert' },
+    { name: 'Java', icon: faJava, levelSymbol: 'star', symbolColor: 'symbol-expert' },
+    { name: 'MySQL', icon: faDatabase, levelSymbol: 'intermediate', symbolColor: 'symbol-intermediate' },
+    { name: 'Git', icon: faGithub, levelSymbol: 'star', symbolColor: 'symbol-expert' },
+    { name: 'GitHub', icon: faGithub, levelSymbol: 'star', symbolColor: 'symbol-expert' },
+    { name: 'Bootstrap', icon: faBootstrap, levelSymbol: 'intermediate', symbolColor: 'symbol-intermediate' },
+    { name: 'Material UI', icon: faReact, levelSymbol: 'intermediate', symbolColor: 'symbol-intermediate' },
+    { name: 'Problem Solving', icon: faBrain, levelSymbol: 'star', symbolColor: 'symbol-expert' },
+    { name: 'DSA', icon: faCode, levelSymbol: 'intermediate', symbolColor: 'symbol-intermediate' },
 ];
 
 const Skills = () => {
@@ -31,13 +30,16 @@ const Skills = () => {
                             <div className="skill-card-front">
                                 <FontAwesomeIcon icon={skill.icon} size="3x" />
                                 <h3>{skill.name}</h3>
-                            </div>
-                            <div className="skill-card-back">
-                                <p>{skill.name}</p>
-                                <div className="skill-level">
-                                    <div className="skill-bar">
-                                        <span style={{ width: `${skill.level}%` }}>{skill.level}%</span>
-                                    </div>
+                                <div className="skill-symbol">
+                                    {skill.levelSymbol === 'star' && (
+                                        <span className={`symbol symbol-star ${skill.symbolColor}`}>★</span>
+                                    )}
+                                    {skill.levelSymbol === 'intermediate' && (
+                                        <span className={`symbol ${skill.symbolColor}`}>◆</span>
+                                    )}
+                                    {skill.levelSymbol === 'beginner' && (
+                                        <span className={`symbol ${skill.symbolColor}`}>•</span>
+                                    )}
                                 </div>
                             </div>
                         </div>

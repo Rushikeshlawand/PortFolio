@@ -11,16 +11,19 @@
     flex-direction: column; /* Stack the elements vertically */
     align-items: center; /* Center content horizontally */
     max-width: 1200px;
+ 
     margin: auto;
 }
 
 .contact-form {
+    
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
     max-width: 600px;
     width: 100%; /* Ensure the form takes full width */
-    background-color: #333; /* Card background color */
+    background-color: #1c353542;
+    
 }
 .contact-content h2{
     font-size: 2.5em;
@@ -47,8 +50,7 @@
     margin-left: -10px;
     border: 1px solid #555; /* Slightly darker border */
     border-radius: 4px;
-    
-    background-color: #444; /* Input background color */
+    background-color: #1c353542;
     color: #fff; /* Input text color */
 }
 
@@ -64,5 +66,5 @@
 }
 
 .contact-form button:hover {
-    background-color: #4b0ae2;
+    background-color: #16fc16;
 }

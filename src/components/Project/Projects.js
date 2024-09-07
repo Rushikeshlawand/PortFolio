@@ -21,9 +21,7 @@ const Projects = () => {
                         <br />
                         • Utilized Git for version control, managing code versions, resolving conflicts, and collaborating with team members.
                     </p>
-                    <a href="https://github.com/yourusername/customer-portal" target="_blank" rel="noopener noreferrer" className="github-link">
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>
+                   
                 </div>
                 <div className="project-card">
                     <h3>Restaurant Management System</h3>

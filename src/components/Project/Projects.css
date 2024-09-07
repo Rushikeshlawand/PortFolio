@@ -1,4 +1,4 @@
-/* Existing styles for the Projects section */
+/* src/components/Projects.css */
 #projects {
     padding: 40px 20px;
     margin-top: 180px;
@@ -13,105 +13,70 @@
 
 .project-container {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: nowrap; /* Ensure all cards are in one line */
     justify-content: center; /* Center-aligns the project cards */
     gap: 20px; /* Adds space between the cards */
+    overflow-x: auto; /* Allows horizontal scrolling if cards overflow */
 }
 
-/* Modified .project-card to include the spinning gradient border */
 .project-card {
-    width: 60vmin;
-    height: 60vmin;
+    flex: 1 0 250px; /* Reduced minimum width for smaller cards */
     display: grid;
     place-content: center;
     color: white;
     text-shadow: 0 1px 0 #000;
-    background: #333;
-    border-radius: 2em;
-    transition: transform 0.3s ease-in-out;
-    position: relative;
+    background: #1c353542;
+    border-radius: 8px;
+    padding: 15px; /* Reduced padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-
-    /* Spinning gradient border */
-    --border-angle: 0turn; /* For animation */
-    --main-bg: conic-gradient(
-        from var(--border-angle),
-        #213,
-        #112 5%,
-        #112 60%,
-        #213 95%
-    );
-
-    border: solid 2px transparent;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
-
-    background: 
-        var(--main-bg) padding-box,
-        var(--gradient-border) border-box,
-        var(--main-bg) border-box;
-    
-    background-position: center center;
-    animation: bg-spin 3s linear infinite;
-}
-
-@keyframes bg-spin {
-    to {
-        --border-angle: 1turn;
-    }
+    box-shadow: 0 1px 5px rgb(133, 213, 86); /* Added shadow to the card */
 }
 
 .project-card:hover {
-    transform: scale(1.01);
-    animation-play-state: paused;
-}
-
-/* Custom property registration */
-@property --border-angle {
-    syntax: "<angle>";
-    inherits: true;
-    initial-value: 0turn;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 5px rgba(241, 249, 17, 0.762);
 }
 
 .project-card h3 {
-    font-size: 1.6em;
+    font-size: 1.4em; /* Reduced font size */
     margin-top: 1px;
     color: #ffffff;
 }
 
 .project-card p {
-    font-size: 0.9em;
-    line-height: 1.5;
-    color: #ffffff;
+    font-size: 1em; /* Reduced font size */
+    line-height: 1.4; /* Adjusted line height */
+    color: #ddd;
     text-align: left;
-    margin-left: 15px;
-    margin-right: 10px;
+    margin: 10px 10px; /* Reduced margins */
 }
 
 .project-card .fa-icon {
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 1.5em; /* Reduced icon size */
+    margin-bottom: 10px; /* Reduced margin */
     color: #ffffff;
     text-align: center;
     display: block;
 }
 
 .github-link {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.4em; /* Reduced font size */
     transition: color 0.3s ease-in-out;
 }
 
 .github-link:hover {
     color: #00f48e;
     transform: scale(1.1);
-
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .project-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
     .project-card {
         flex: 1 1 calc(50% - 20px);
     }

@@ -1,37 +1,46 @@
 /* src/components/CertificatesAchievements.css */
 #certificates-achievements {
-    padding: 200px;
-    text-align: center;
-    color: #fff; /* Set text color to white */
+    padding: 100px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
 }
 
 #certificates-achievements h2 {
     font-size: 2.5em;
     margin-bottom: 70px;
-    color: #fff; /* Changed color to white */
+    color: #fff;
+    text-align: center; /* Center align the heading */
 }
 
 .extracurricular {
-    margin-bottom: 20px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center align the cards horizontally */
+    max-width: 1400px;
+    margin: auto;
 }
 
 .activity {
     border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
-    background-color: #333; /* Card background color */
-    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgb(133, 213, 86);
+    background-color: #1c353542;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
 }
 
 .activity h4 {
     margin: 0;
     font-size: 1.4em;
-    color: #fff; /* Changed color to white */
+    color: #fff;
 }
 
 .activity p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #fff; /* Changed color to white */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
 }
