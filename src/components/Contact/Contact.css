@@ -1,21 +1,23 @@
 #contact {
     display: flex;
-    margin-bottom: 200px;
     justify-content: space-between;
     padding: 40px;
     color: #fff;
     background-color: #1c353542;
-    margin-top: 400px;
-
+    margin-top: 100px;
     max-width: 1200px;
     margin: auto;
     border-radius: 8px;
+    margin-bottom: 150px;
+    margin-top: 300px;
   }
   
   .contact-message {
     flex: 1;
     margin-right: 20px;
     margin-bottom: 200px;
+    margin-top: 100px;
+
 
   }
   
@@ -47,7 +49,7 @@
     border: none;
     border-radius: 5px;
     
-    color: #fff;
+    color: #000000;
     font-size: 1em;
   }
   

@@ -9,14 +9,7 @@ const About = () => {
       <div id="about">
         <h2>About Me</h2>
         <p>
-          I'm Rushikesh Lawand, a Software Engineer from Pune with a strong
-          focus on front-end development using React.js. I hold a Bachelor's
-          degree in Computer Science and have hands-on experience from my
-          internship at Sciqus Infotech, where I built dynamic, user-friendly
-          web applications. My skills include JavaScript, MySQL, and
-          problem-solving, with over 110 problems solved on LeetCode. I'm
-          passionate about creating seamless user experiences and continuously
-          learning to enhance my expertise.
+        I'm Rushikesh Lawand, a software engineer from Pune, Maharashtra, with a B.Tech in Computer Science & Engineering (CGPA: 9.07) from MIT College of Railway Engineering & Research. I have experience in React.JS, Node.JS, and MySQL, and have built dynamic, scalable applications. As an intern at Sciqus Infotech, I developed user interfaces and optimized database operations. I’m skilled in Java, JavaScript, SQL, and have solved 120+ problems on LeetCode. I enjoy building efficient solutions and continuously enhancing my expertise in full-stack development.
         </p>
       </div>
 

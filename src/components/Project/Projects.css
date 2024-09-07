@@ -1,8 +1,8 @@
-/* src/components/Projects.css */
 #projects {
     padding: 40px 20px;
     margin-top: 180px;
     text-align: center;
+    margin-bottom: 400px;
 }
 
 #projects h2 {
@@ -13,21 +13,22 @@
 
 .project-container {
     display: flex;
-    flex-wrap: nowrap; /* Ensure all cards are in one line */
+    flex-wrap: wrap; /* Wrap the cards to next line if needed */
     justify-content: center; /* Center-aligns the project cards */
-    gap: 20px; /* Adds space between the cards */
+    gap: 25px; /* Adds smaller space between the cards */
     overflow-x: auto; /* Allows horizontal scrolling if cards overflow */
 }
 
 .project-card {
-    flex: 1 0 250px; /* Reduced minimum width for smaller cards */
+    flex: 1 0 240px; /* Reducing the base width of the cards */
+    max-width: 370px; /* Maximum width of the card */
     display: grid;
     place-content: center;
     color: white;
     text-shadow: 0 1px 0 #000;
     background: #1c353542;
     border-radius: 8px;
-    padding: 15px; /* Reduced padding */
+    padding: 15px; /* Reduced padding inside the card */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     box-shadow: 0 1px 5px rgb(133, 213, 86); /* Added shadow to the card */
@@ -39,51 +40,22 @@
 }
 
 .project-card h3 {
-    font-size: 1.4em; /* Reduced font size */
+    font-size: 1.4em; /* Reduced the title font size */
     margin-top: 1px;
     color: #ffffff;
 }
 
 .project-card p {
-    font-size: 1em; /* Reduced font size */
-    line-height: 1.4; /* Adjusted line height */
+    font-size: 1em; /* Reduced the paragraph font size */
+    line-height: 1.5;
     color: #ddd;
     text-align: left;
-    margin: 10px 10px; /* Reduced margins */
+    margin: 10px 10px; /* Reduced margin */
 }
 
-.project-card .fa-icon {
-    font-size: 1.5em; /* Reduced icon size */
-    margin-bottom: 10px; /* Reduced margin */
-    color: #ffffff;
-    text-align: center;
-    display: block;
-}
-
-.github-link {
-    color: #ffffff;
-    font-size: 1.4em; /* Reduced font size */
-    transition: color 0.3s ease-in-out;
-}
-
-.github-link:hover {
-    color: #00f48e;
-    transform: scale(1.1);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .project-container {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .project-card {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 480px) {
-    .project-card {
-        flex: 1 1 100%;
-    }
+.project-card .project-icon {
+    width: 20px; /* Reduced icon size */
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
 }

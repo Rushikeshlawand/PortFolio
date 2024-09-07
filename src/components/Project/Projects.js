@@ -1,8 +1,12 @@
 import React from 'react';
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPython, faReact, faJs, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import reactLogo from './../Images/react-logo.png'; // Path to your image
+import mysqlLogo from './../Images/mysql-logo.png'; // Replace with your image paths
+import jsLogo from './../Images/js-logo.png'; // Replace with your image paths
+
+import pythonLogo from './../Images/python-logo.png'; // Replace with your image paths
 
 const Projects = () => {
     return (
@@ -11,8 +15,10 @@ const Projects = () => {
             <div className="project-container">
                 <div className="project-card">
                     <h3>Customer Portal (Internship)</h3>
-                    <p>
-                        <FontAwesomeIcon icon={faReact} /> <FontAwesomeIcon icon={faDatabase} /> <FontAwesomeIcon icon={faJs} />
+                    <p>Technology Stack : 
+                        <img src={reactLogo} alt="React" className="project-icon" /> 
+                        <img src={mysqlLogo} alt="MySQL" className="project-icon" /> 
+                        <img src={jsLogo} alt="JavaScript" className="project-icon" />
                         <br />
                         • Created dynamic user interfaces using React, enhancing user experience and boosting retention rates. Conducted
                         thorough code reviews and provided actionable feedback, improving overall code quality and maintainability.
@@ -21,12 +27,13 @@ const Projects = () => {
                         <br />
                         • Utilized Git for version control, managing code versions, resolving conflicts, and collaborating with team members.
                     </p>
-                   
                 </div>
                 <div className="project-card">
                     <h3>Restaurant Management System</h3>
-                    <p>
-                        <FontAwesomeIcon icon={faReact} /> <FontAwesomeIcon icon={faJs} /> <FontAwesomeIcon icon={faDatabase} />
+                    <p>Technology Stack : 
+                        <img src={reactLogo} alt="React" className="project-icon" /> 
+                        <img src={jsLogo} alt="JavaScript" className="project-icon" /> 
+                        <img src={mysqlLogo} alt="MySQL" className="project-icon" />
                         <br />
                         • Utilized React.JS to build dynamic user interfaces, providing a seamless and interactive experience for customers, admins, and chefs.
                         <br />
@@ -42,17 +49,16 @@ const Projects = () => {
                 </div>
                 <div className="project-card">
                     <h3>Real-Time Emotion Detection System</h3>
-                    <p>
-                        <FontAwesomeIcon icon={faPython} />
+                    <p>Technology Stack : 
+                        <img src={pythonLogo} alt="Python" className="project-icon" />
                         <br />
                         • Developed a Python-based application using OpenCV for real-time facial expression analysis, including face detection, feature extraction, image preprocessing, and emotion recognition.
                         <br />
                         • Implemented a deep learning model with TensorFlow to classify emotions such as happiness, sadness, anger, and surprise, achieving high accuracy, real-time performance, and reliable emotion detection for varied expressions.
-                            <br/>
+                        <br />
                         • Integrated machine learning algorithms for emotion classification, allowing analysis of video feeds and prediction of emotions with high accuracy.
                     </p>
-                    
-                    <a href="https://github.com/Rushikeshlawand/Real-Time-Face-Emotion-Detection-System.git" target="_blank" rel="noopener noreferrer" className="github-link">
+                    <a href="https://github.com/Rushikeshlawand/restaurants-management-system.git" target="_blank" rel="noopener noreferrer" className="github-link">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </div>
