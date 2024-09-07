@@ -54,7 +54,7 @@ const Projects = () => {
                         • Integrated machine learning algorithms for emotion classification, allowing analysis of video feeds and prediction of emotions with high accuracy.
                     </p>
                     
-                    <a href="https://github.com/yourusername/real-time-emotion-detection" target="_blank" rel="noopener noreferrer" className="github-link">
+                    <a href="https://github.com/Rushikeshlawand/Real-Time-Face-Emotion-Detection-System.git" target="_blank" rel="noopener noreferrer" className="github-link">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </div>

@@ -7,6 +7,7 @@ header {
 }
 
 nav {
+  background-color: rgba(35, 49, 61, 0.466);
   padding: 1em;
 }
 
@@ -27,7 +28,7 @@ nav ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 0.5em 1em; /* Adjust padding to reduce space */
-  font-size: 1em; /* Adjust font size if necessary */
+  font-size: 1.1em; /* Adjust font size if necessary */
   transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
 }
 
@@ -35,6 +36,10 @@ nav ul li a {
 nav ul li:hover {
   border-radius: 4px; /* Rounded corners on hover */
   transform: scale(1.3); /* Increase size on hover */
+  color: #fff; 
+  text-shadow: 2px 2px 8px rgb(255, 158, 21); /* Enhance shadow on hover */
+  transition: color 0.3s;
+
 }
 
 /* Assuming your header height is 60px */

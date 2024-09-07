@@ -14,15 +14,15 @@
     flex: 1;
     border-radius: 8px;
     color: #fff;
-    background-color: #444;
+    background-color: #1c353542;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
+    box-shadow: 0 1px 5px rgb(133, 213, 86); /* Added shadow to the card */
 
 }
 #about:hover{
     transform: translateY(-1px);
-    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.762);
+    box-shadow: 0 1px 5px rgba(241, 249, 17, 0.762);
 }
 
 #about h2 {
@@ -50,19 +50,22 @@
 }
 
 .edu-item {
-    background: #333;
+    background-color: #1c353542;
+
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    box-shadow: 0 1px 10px rgb(255, 255, 255); /* Added shadow to the card */
+    box-shadow: 0 1px 5px rgb(133, 213, 86); /* Added shadow to the card */
+
 }
 
 /* Hover effect on education cards */
 .edu-item:hover {
     transform: translateY(-1px);
-    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.663);
+    box-shadow: 0 1px 5px rgba(241, 249, 17, 0.762);
+
 }
 
 .edu-item h4 {
@@ -109,4 +112,11 @@
     .education {
         margin-left: 20px;
     }
+}
+.edu-item .fa-icon {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
 }
