@@ -17,7 +17,7 @@
 .extracurricular {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: center; /* Center align the cards horizontally */
     max-width: 1400px;
     margin: auto;
@@ -28,7 +28,7 @@
     padding: 20px;
     box-shadow: 0 1px 5px rgb(133, 213, 86);
     background-color: #1c353542;
-    width: 100%;
+    width: 200%;
     max-width: 300px;
     text-align: center;
 }
