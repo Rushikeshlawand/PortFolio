@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons'; // Use this or another icon for code-related symbols
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -41,6 +44,14 @@ const ContactPage = () => {
           We would love to hear from you! If you have any questions or feedback,
           feel free to reach out to us using the form on the right.
         </p>
+        <a href="https://leetcode.com/your-profile" target="_blank" rel="noopener noreferrer" className="social-button leetcode-button">
+          <FontAwesomeIcon icon={faCode} className="social-icon" />
+          Visit My LeetCode Profile
+        </a>
+        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="social-button github-button">
+          <FontAwesomeIcon icon={faGithub} className="social-icon" />
+          Visit My GitHub Profile
+        </a>
       </div>
       <form onSubmit={handleSubmit} className="contact-form">
         <h2>Contact Us</h2>
