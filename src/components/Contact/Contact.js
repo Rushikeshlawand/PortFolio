@@ -44,11 +44,11 @@ const ContactPage = () => {
           We would love to hear from you! If you have any questions or feedback,
           feel free to reach out to us using the form on the right.
         </p>
-        <a href="https://leetcode.com/your-profile" target="_blank" rel="noopener noreferrer" className="social-button leetcode-button">
+        <a href="https://leetcode.com/u/rushikeshlawand/" target="_blank" rel="noopener noreferrer" className="social-button leetcode-button">
           <FontAwesomeIcon icon={faCode} className="social-icon" />
           Visit My LeetCode Profile
         </a>
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="social-button github-button">
+        <a href="https://github.com/Rushikeshlawand" target="_blank" rel="noopener noreferrer" className="social-button github-button">
           <FontAwesomeIcon icon={faGithub} className="social-icon" />
           Visit My GitHub Profile
         </a>

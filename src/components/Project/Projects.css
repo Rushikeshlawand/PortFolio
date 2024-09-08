@@ -21,7 +21,7 @@
 
 .project-card {
     flex: 1 0 240px; /* Reducing the base width of the cards */
-    max-width: 370px; /* Maximum width of the card */
+    max-width: 400px; /* Maximum width of the card */
     display: grid;
     place-content: center;
     color: white;
@@ -58,4 +58,17 @@
     height: 20px;
     margin-right: 5px;
     vertical-align: middle;
+}
+
+.project-card a {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    color: #ffffff;
+    display: block;
+}
+.project-card a:hover {
+    font-size: 1.7em;
+    margin-bottom: 5px;
+    color: #06ff02;
+    display: block;
 }
